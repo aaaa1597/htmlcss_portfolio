@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+:root {
+  --main-color: #eb51c2;
+}
+/*--------------------------------
+  全体
+---------------------------------*/
+body {
+  font-family: "Josefin Sans", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 16px;
+  color: #111;
+  font-feature-settings: "palt";
+}
+.container {
+  margin: 0 auto;
+  width: 96%;
+  min-width: 375px;
+  max-width: 1024px;
+}
+/*--------------------------------
+MainView
+---------------------------------*/
+.mv {
+  position: relative;
+  /* outline: dashed 1px rebeccapurple; */
+}
+.mv_title {
+  font-size: 2rem;
+}
+.n-letter {
+  color: darkseagreen;
+}
+.onephrase {
+  filter: drop-shadow(5px 3px 5px darkseagreen);
+}
+/*--------------------------------
+Procucts
+---------------------------------*/
+.portfolio {
+  padding: 20px 0 40px;
+}
+.portfolio__itembox {
+  display: flex;
+  column-gap: 20px;
+  padding: 10px;
+  margin: 10px 0 10px;
+  outline: solid 3px darkseagreen;
+}
+.portfolio__itembox p {
+  background-color: #eb51c2;
+  flex-grow: 1;
+}
+.portfolio__itembox figure {
+  width: 250px;
+  height: 250px;
+  flex-grow: 2;
+  overflow: hidden;
+}
+.portfolio__itembox img {
+  object-fit: cover;
+  object-position: 50% 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* media Queries 375px以上 タブレット用
+----------------------------------------------------*/
+@media screen and (min-width: 375px) {
+}
+/* media Queries 600px以上 タブレット用
+----------------------------------------------------*/
+@media screen and (min-width: 600px) {
+}
+
+/* media Queries 1025px以上
+----------------------------------------------------*/
+@media screen and (min-width: 1025px) {
+}
+
+/* media Queries 1440px以上
+----------------------------------------------------*/
+@media screen and (min-width: 1440px) {
+}
