@@ -22,14 +22,11 @@ body {
   max-width: 1440px;
 }
 .tag {
-  width: 100%;
-  font-size: 1rem;
-  line-height: 1;
-  font-weight: bold;
+  font-size: 0.8rem;
   letter-spacing: 0.05em;
   color: #fff;
   text-align: center;
-  padding: 10px 10px;
+  padding: 5px 10px;
   border-radius: 50px;
   background-color: var(--main-color);
 }
@@ -57,13 +54,12 @@ Procucts
 .portfolio__products {
   display: flex;
   flex-direction: column;
+  gap: 20px 20px;
 }
 .portfolio__itembox {
   display: flex;
   flex-direction: row;
-  column-gap: 20px;
-  padding: 10px;
-  margin: 10px 0 10px;
+  padding: 30px 30px;
   max-height: 400px;
   outline: solid 3px var(--main-color);
 }
@@ -71,22 +67,20 @@ Procucts
   display:flex;
   flex-direction: column;
   width: 250px;
+  padding: 10px;
 }
 .portfolio__itembox-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #111;
   margin: 0 0 10px 0;
   opacity: 0.5;
 }
 .portfolio__itembox-content {
   width: 100%;
-  min-height: 60px;
-  max-height: 60px;
   overflow: auto;
 }
 .portfolio__itembox-tag {
   background-color: blue;
-  width: 50%;
   margin-top: auto;
   margin-left: auto;
 }
@@ -121,6 +115,7 @@ Procucts
   }
   .mv {
     margin-right: 10px;
+    padding-top: 20%;
   }
   .portfolio__products {
     flex-direction: row;
@@ -128,9 +123,15 @@ Procucts
   }
   .portfolio__itembox {
     flex-direction: column-reverse;
+    padding: 30px 30px 0;
   }
   .portfolio__itembox-explain {
-    margin: 10px 0 10px;
+    margin: 20px 0 0;
+  }
+  .portfolio__itembox-content {
+    min-height: 70px;
+    max-height: 70px;
+    margin-bottom: 10px;
   }
 }
 
