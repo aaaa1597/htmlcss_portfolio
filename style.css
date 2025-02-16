@@ -19,6 +19,18 @@ body {
   min-width: 375px;
   max-width: 1024px;
 }
+.tag {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 50px;
+  background-color: var(--main-color);
+}
 /*--------------------------------
 MainView
 ---------------------------------*/
@@ -48,18 +60,26 @@ Procucts
   outline: solid 3px var(--main-color);
 }
 .portfolio__itembox-explain {
+  display:flex;
+  flex-direction: column;
   width: 250px;
 }
-.portfolio__itembox-explain h2 {
-  font-size: 1.8rem;
+.portfolio__itembox-title {
+  font-size: 1.5rem;
   color: #111;
   margin: 0 0 10px 0;
   opacity: 0.5;
 }
-.portfolio__itembox p {
+.portfolio__itembox-content {
   width: 100%;
-  flex-grow: 1;
 }
+.portfolio__itembox-tag {
+  background-color: blue;
+  width: 50%;
+  margin-top: auto;
+}
+.tag-blue { background-color: blue;}
+.tag-blueviolet { background-color: blueviolet;}
 .portfolio__itembox figure {
   width: 250px;
   height: 250px;
