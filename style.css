@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 :root {
-  --main-color: #eb51c2;
+  --main-color: darkseagreen;
 }
 /*--------------------------------
   全体
@@ -24,16 +24,15 @@ MainView
 ---------------------------------*/
 .mv {
   position: relative;
-  /* outline: dashed 1px rebeccapurple; */
 }
 .mv_title {
   font-size: 2rem;
 }
 .n-letter {
-  color: darkseagreen;
+  color: var(--main-color);
 }
 .onephrase {
-  filter: drop-shadow(5px 3px 5px darkseagreen);
+  filter: drop-shadow(5px 3px 5px var(--main-color));
 }
 /*--------------------------------
 Procucts
@@ -46,10 +45,19 @@ Procucts
   column-gap: 20px;
   padding: 10px;
   margin: 10px 0 10px;
-  outline: solid 3px darkseagreen;
+  outline: solid 3px var(--main-color);
+}
+.portfolio__itembox-explain {
+  width: 250px;
+}
+.portfolio__itembox-explain h2 {
+  font-size: 1.8rem;
+  color: #111;
+  margin: 0 0 10px 0;
+  opacity: 0.5;
 }
 .portfolio__itembox p {
-  background-color: #eb51c2;
+  width: 100%;
   flex-grow: 1;
 }
 .portfolio__itembox figure {
@@ -57,6 +65,7 @@ Procucts
   height: 250px;
   flex-grow: 2;
   overflow: hidden;
+  filter: drop-shadow(-1px 1px 5px var(--main-color));
 }
 .portfolio__itembox img {
   object-fit: cover;
