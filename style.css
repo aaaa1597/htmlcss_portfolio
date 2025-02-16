@@ -107,9 +107,9 @@ Procucts
     background-color: red;
   } */
 }
-/* media Queries 750px以上 タブレット用
+/* media Queries 835px以上 タブレット用
 ----------------------------------------------------*/
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 835px) {
   .container {
     flex-direction: row;
   }
