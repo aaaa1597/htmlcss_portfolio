@@ -101,6 +101,10 @@ Procucts
   height: 100%;
 }
 
+.portfolio__itembox figure {
+  text-align: center;
+}
+
 /* media Queries 375px以上 タブレット用
 ----------------------------------------------------*/
 @media screen and (min-width: 375px) {
